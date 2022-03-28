@@ -95,9 +95,9 @@ const TicketsPage: FC = () => {
         (ticket) => ticket.segments[0].stops.length <= 1
       );
     }
-
     setAllTickets(newTickets);
     setTicketsToShow(newTickets.slice(0, 5));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [filters]);
 
   return (
