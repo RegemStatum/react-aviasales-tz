@@ -1,0 +1,26 @@
+.container {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* header */
+.container header {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.container header span {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+.container header img {
+  display: block;
+  margin-left: auto;
+}

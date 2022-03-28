@@ -1,0 +1,24 @@
+.container {
+  max-width: 502px;
+}
+
+@media (min-width: 375px) {
+  .container {
+    margin: 0 0.5rem;
+  }
+}
+
+@media (min-width: 502px) {
+  .container {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 750px;
+    display: flex;
+    /* justify-content: space-around; */
+    gap: 20px;
+  }
+}

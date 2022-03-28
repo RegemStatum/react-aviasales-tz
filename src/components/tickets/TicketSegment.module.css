@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.container > div {
+  width: 100%;
+  max-width: 141px;
+}
+
+.container span {
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.125rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+}
+
+.container p {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.3125rem;
+  color: var(--text-color);
+}
+
+@media (min-width: 375px) {
+  .container {
+    gap: 20px;
+  }
+}

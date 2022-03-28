@@ -1,0 +1,16 @@
+.container {
+  padding: 1.25rem 0;
+  background-color: var(--card-bg-color);
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container h4 {
+  min-width: calc(192px + 40px);
+  margin-bottom: 0.625rem;
+  padding: 0 1.25rem;
+  line-height: 0.75rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
