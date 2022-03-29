@@ -14,8 +14,14 @@ const TicketsPage: FC = () => {
   const [ticketsToShow, setTicketsToShow] = useState<Array<Ticket>>([]);
 
   const fetchTickets = async () => {
+    const searchIdResponse = await fetch(
+      "https://front-test.beta.aviasales.ru/search"
+    );
+    const searchIdData = await searchIdResponse.json();
+    const searchId = searchIdData.searchId;
+
     const response = await fetch(
-      "https://front-test.beta.aviasales.ru/tickets?searchId=t9uy"
+      `https://front-test.beta.aviasales.ru/tickets?searchId=${searchId}`
     );
     const data = await response.json();
     setAllTickets(data.tickets);
